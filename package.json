@@ -1,0 +1,59 @@
+{
+    "name": "curso-platzi-react-avanzado",
+    "version": "1.0.0",
+    "description": "curso react avanzado",
+    "main": "index.js",
+    "scripts": {
+        "dev": "webpack serve --open --mode development",
+        "vercel-build": "npm run build",
+        "build": "webpack --mode production",
+        "lint": "standard"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/midudev/curso-platzi-react-avanzado.git"
+    },
+    "keywords": [
+        "react"
+    ],
+    "author": "Antonio Espin",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/midudev/curso-platzi-react-avanzado/issues"
+    },
+    "homepage": "https://github.com/midudev/curso-platzi-react-avanzado#readme",
+    "devDependencies": {
+        "@babel/core": "^7.16.12",
+        "@babel/plugin-transform-runtime": "^7.16.10",
+        "@babel/preset-env": "^7.16.11",
+        "@babel/preset-react": "^7.16.7",
+        "babel-loader": "^8.2.3",
+        "html-loader": "^3.1.0",
+        "html-webpack-plugin": "^5.5.0",
+        "mini-css-extract-plugin": "^2.5.2",
+        "standard": "^16.0.4",
+        "webpack": "^5.67.0",
+        "webpack-cli": "^4.9.2",
+        "webpack-dev-server": "^4.7.3"
+    },
+    "dependencies": {
+        "@apollo/client": "^3.5.8",
+        "graphql": "^16.3.0",
+        "intersection-observer": "^0.12.0",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-icons": "^4.3.1",
+        "react-router-dom": "^6.2.1",
+        "styled-components": "^5.3.3"
+    },
+    "standard": {
+        "ignore": [
+            "/api/**"
+        ]
+    },
+    "eslintConfig": {
+        "extends": [
+            "./node_modules/standard/eslintrc.json"
+        ]
+    }
+}
